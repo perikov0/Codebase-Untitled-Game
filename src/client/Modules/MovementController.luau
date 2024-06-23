@@ -19,7 +19,6 @@ function MovementController.CharacterInit(character: Model)
         local direction = MovementController.GetDirection(hrp.CFrame.LookVector, MovementController.Humanoid.MoveDirection.Unit)
         character:SetAttribute("Direction", direction)
     end))
-
     task.wait(.1)
     MovementController.StopRun() --// Initialize as not running.
 end
